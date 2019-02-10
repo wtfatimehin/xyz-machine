@@ -29,6 +29,14 @@ class ViewController: UIViewController {
         let formatter = NumberFormatter()
         formatter.minimumFractionDigits = 1
         formatter.maximumFractionDigits = 1
+        
+        let x = formatter.string(for: accelarometerData.acceleration.x)!
+        let y = formatter.string(for: accelarometerData.acceleration.y)!
+        let z = formatter.string(for: accelarometerData.acceleration.z)!
+        
+        xLabel.text = "X: \(x)"
+        yLabel.text = "Y: \(y)"
+        zLabel.text = "Z: \(z)"
     }
 
 
