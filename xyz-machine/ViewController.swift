@@ -25,7 +25,10 @@ class ViewController: UIViewController {
     
     func updateLabels(data: CMAccelerometerData?, error: Error?) {
         guard let accelarometerData = data else { return }
-        print(accelarometerData)
+        
+        let formatter = NumberFormatter()
+        formatter.minimumFractionDigits = 1
+        formatter.maximumFractionDigits = 1
     }
 
 
